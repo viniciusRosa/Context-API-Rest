@@ -1,17 +1,13 @@
-import React, { useContext } from 'react'
-import { Redirect, useHistory } from 'react-router-dom'
+import React from 'react'
 import {useAuth} from '../../contexts/auth'
 
 const SignIn: React.FC = () => {
 
-    const history = useHistory()
 
     const { signed, signIn } = useAuth()
-     function handleClick() {
-
-          signIn()
+    function handleClick() {
+        signIn()
          
-
     }
     
     return (

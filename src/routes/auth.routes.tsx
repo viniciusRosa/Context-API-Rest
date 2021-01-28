@@ -1,10 +1,10 @@
-import React from 'react'
-import { Router, BrowserRouter, Switch, Route } from 'react-router-dom'
+import React from 'react';
+import { Route } from 'react-router-dom';
 
-import SignIn from '../pages/SignIn'
+import SignIn from '../pages/SignIn';
 
 const AuthRoutes: React.FC = () => (
-            <Route path='/' component={SignIn} />
+    <Route path='/' component={SignIn} />
 )
 
-export default AuthRoutes
+export default AuthRoutes;
